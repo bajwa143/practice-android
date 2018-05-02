@@ -16,7 +16,7 @@ public class Starter extends AppCompatActivity {
         setContentView(R.layout.activity_starter);
 
         // String array for adapter
-        final String[] packages = new String[]{"newboston"};
+        final String[] packages = new String[]{"newboston", "udacity_developing_android_apps"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(Starter.this, android.R.layout.simple_list_item_1, packages);
 
@@ -30,13 +30,6 @@ public class Starter extends AppCompatActivity {
                 try {
                     Class cls = Class.forName("com.bajwa." + packages[position] + ".MainActivity");
                     Intent intent = new Intent(Starter.this, cls);
-
-
-
-
-
-
-
 
                     startActivity(intent);
                 } catch (ClassNotFoundException e) {
