@@ -31,7 +31,7 @@ public class GitHubRepSearch extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.udacity_dap_activity_connect_internet);
+        setContentView(R.layout.udacity_dap_activity_github_repo_search);
 
         mSearchBoxEditText = (EditText) findViewById(R.id.et_search_box);
 
