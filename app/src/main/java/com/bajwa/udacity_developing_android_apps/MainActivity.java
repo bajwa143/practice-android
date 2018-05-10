@@ -22,7 +22,7 @@ public class MainActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.udacity_dap_activity_main);       //No need to setContent view when we are using ListActivity
-        classes = new String[]{"GitHubRepSearch"};
+        classes = new String[]{"GitHubRepSearch", "MyRecyclerView", "ImplicitIntents"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, classes);
 
@@ -44,7 +44,6 @@ public class MainActivity extends ListActivity {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
 
     }
 }

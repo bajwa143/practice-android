@@ -3,6 +3,8 @@
     package="com.bajwa">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permission required to store image -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +22,13 @@
         </activity>
         <activity android:name=".newboston.MainActivity" />
         <activity android:name=".udacity_developing_android_apps.MainActivity" />
-        <activity android:name=".udacity_developing_android_apps.GitHubRepSearch"></activity>
+        <activity
+            android:name=".udacity_developing_android_apps.GitHubRepSearch"
+            android:label="Search Github Repo" />
+        <activity
+            android:name=".udacity_developing_android_apps.MyRecyclerView"
+            android:label="RecyclerView Demo" />
+        <activity android:name=".udacity_developing_android_apps.ImplicitIntents"></activity>
     </application>
 
 </manifest>
